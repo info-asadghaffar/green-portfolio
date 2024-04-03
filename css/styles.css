@@ -1,0 +1,239 @@
+/*************************/
+/********* header ********/
+/*************************/
+header{
+    height: 100svh;
+}
+section.hero{
+    height: calc(100svh - 78px);
+}
+header{
+    background: url(../imgs/header_bg.png) top right no-repeat;
+    background-size: contain;
+}
+@media (max-width: 991px) {
+    header .container .collapse ul li{
+        text-shadow: 1px 6px 8px gray;
+    }
+}
+@media (max-width: 1025px) {
+    header{
+        background: none;
+    }
+}
+@media (min-width: 1300px) {
+    header{
+        background-size: auto;
+    }
+}
+/*************************/
+/********* hero **********/
+/*************************/
+.hero .container .images{
+    position: relative;
+}
+
+.hero .container .images img{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*************************/
+/********* about ********/
+/*************************/
+
+.about .container .img{
+    background: url(../imgs/slip.png) top right no-repeat;
+    padding: 25px 30px 0px 0;
+    background-size: 40%;
+}
+
+.about .container .img{
+    position: relative; 
+}
+
+.about .container .circle{
+    position: absolute;
+    bottom: 80%;
+    right: 76%;
+    width: 196px;
+    height: 196px;
+    border-radius: 148px;
+    background-color:transparent;
+    border: 22px solid #0fbf61;
+}
+/*************************/
+/********* progress ******/
+/*************************/
+.rating .container .progress-bars{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    border: 2px solid #0fbf61;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 7px 20px rgba(22, 22, 22, 0.699);
+}
+.rating .container .progress-bars::before{
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.rating .container .progress-bars .value{
+    position: relative;
+}
+/*************************/
+/********* services ******/
+/*************************/
+.services{
+    background: url(../imgs/slip.png) bottom right no-repeat;
+    background-size: 20%;
+}
+.services .container .thumbnail img{
+    border: 2px solid #0fbf61;
+    border-radius: 50%;
+    padding: 6px;
+}
+.services .container .btn{
+    background-color: #0fbf61;
+    color: white;
+}
+.services .container .btn:hover{
+    background-color: white;
+    color: black;
+}
+.services .container .post{
+    width: 340px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgba(65, 61, 61, 0.781);
+    padding: 30px 20px;
+    margin: 20px 0;
+}
+.services .container .post h2{
+    color: #0fbf61;
+}
+.services .container .post h2:hover{
+    color: white;
+}
+.services .container .post:hover,
+.services .container .post .thumbnail img:hover{
+    background-color: #0fbf61;
+    color: white;
+    border: 2px solid #fff;
+}
+/*************************/
+/********* skill ********/
+/************************/
+.skill .container .progress{
+    height: 4px;
+    width: 90%;
+}
+/* ************************/
+/********* review ********/
+/*************************/
+
+section.review{
+    background: url(../imgs/slip.png) top left no-repeat;
+    background-size: 15%;
+}
+section.review .container .post{
+    width: 80%;
+    height: 390px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgba(65, 61, 61, 0.781);
+    background-color: #ffffff;
+}
+/* ************************/
+/******** portfolio ******/
+/************************/
+.portfolio .container .navbar ul li{
+    list-style: none;
+    color: #747d8c;
+    padding: 5px;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+.portfolio .container .navbar ul li:hover{
+    color: #2f3542;
+    border-bottom: 2px solid #2f3542;
+}
+.portfolio .container .portfolio_gallery{
+    flex-flow: row wrap;
+    gap: 30px;
+}
+.portfolio .container .portfolio_gallery .item{
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+}
+.portfolio .container .portfolio_gallery .item img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    transition: 0.5s linear;
+}
+.portfolio .container .portfolio_gallery .item img:hover{
+    transform: scale(1.1);
+}
+.portfolio .container .portfolio_gallery .item .overlay{
+    width: 100%;
+    height: 100%;
+}
+.portfolio .container .portfolio_gallery .item .overlay{
+    display: none !important;
+}
+.portfolio .container .portfolio_gallery .item:hover .overlay{
+    display: flex !important;
+    width: 100%;
+    height: 100%;
+}
+.portfolio .container .portfolio_gallery .item:hover .overlay .btn{
+    z-index: 999;
+}
+/* ************************/
+/********* contact *******/
+/************************/
+.blog .container .row img{
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.blog .container .row img:hover{
+    transform: scale(1.1);
+}
+/* ************************/
+/********* contact *******/
+/************************/
+section.contact{
+    background: url(../imgs/slip.png) bottom right no-repeat;
+    background-size: 15%;
+}
+section.contact .container .row input{
+    height: 70px;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 15px 0;
+    font-size: large;
+    padding: 0px 15px;
+}
+section.contact .container .message textarea{
+    height: 180px;
+    width: 95%;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 15px 0;
+    font-size: large;
+    padding: 5px 10px;
+}
+/* ************************/
+/********* footer ********/
+/************************/
